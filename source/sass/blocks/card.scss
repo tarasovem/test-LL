@@ -101,7 +101,8 @@
   border-radius: 8px 0 8px 8px;
 
   @media (min-width: $tablet) {
-
+    width: 73px;
+    height: 80px;
   }
 }
 
@@ -109,6 +110,11 @@
   font-weight: 600;
   font-size: 26px;
   line-height: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 30px;
+  }
 }
 
 .card__month,
@@ -117,6 +123,11 @@
   font-size: 12px;
   line-height: 14px;
   text-transform: lowercase;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .card__meta {
@@ -161,6 +172,11 @@
   @media (min-width: $tablet) {
     font-size: 20px;
   }
+
+  a {
+    text-decoration: none;
+    color: $dark-main;
+  }
 }
 
 .card__text {
@@ -173,5 +189,6 @@
   @media (min-width: $tablet) {
     font-size: 32px;
     line-height: 32px;
+    margin-right: 105px;
   }
 }
