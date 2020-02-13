@@ -2,3 +2,54 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+.articles__body {
+  display: grid;
+  grid-row-gap: 16px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-auto-rows: minmax(360px, auto);
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.articles__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles__button {
+  display: block;
+  grid-column: auto;
+  margin-top: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: $white;
+  background-color: $blue-2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 24px;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    margin-top: 36px;
+    padding-right: 133px;
+    padding-left: 133px;
+  }
+}
+
+.articles__card {
+  &_large {
+    grid-row: 1/3;
+  }
+}

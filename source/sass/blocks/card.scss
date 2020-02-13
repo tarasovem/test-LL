@@ -58,6 +58,10 @@
   border-radius: 4px 4px 0 4px;
   max-width: 160px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    font-size: 12px;
+  }
 }
 
 .card__preview {
@@ -67,9 +71,16 @@
   min-height: 184px;
   border-radius: 12px 0 12px 12px;
   overflow: hidden;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    min-height: 220px;
+  }
 
   img {
     display: block;
+    width: auto;
     max-width: 100%;
     height: auto;
   }
@@ -88,6 +99,10 @@
   background-color: rgba($grey-25, 0.7);
   color: $white;
   border-radius: 8px 0 8px 8px;
+
+  @media (min-width: $tablet) {
+
+  }
 }
 
 .card__day {
@@ -142,4 +157,21 @@
   padding-right: 8px;
   padding-left: 8px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
+.card__text {
+  margin: 20px 80px 20px 16px;
+  color: $white;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 28px;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
