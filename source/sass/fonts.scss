@@ -1,6 +1,7 @@
 @font-face {
   font-family: "SourceSansPro";
   font-weight: 400;
+  font-display: swap;
   src: local("SourceSansPro-Regular"),
   url("../fonts/SourceSansPro-Regular.woff2") format("woff2"),
   url("../fonts/SourceSansPro-Regular.woff") format("woff");
@@ -9,6 +10,7 @@
 @font-face {
   font-family: "SourceSansPro";
   font-weight: 600;
+  font-display: swap;
   src: local("SourceSansPro-SemiBold"),
   url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2"),
   url("../fonts/SourceSansPro-SemiBold.woff") format("woff");
