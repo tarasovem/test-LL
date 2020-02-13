@@ -10,3 +10,13 @@
     }
   }
 }
+
+@mixin hover-scale {
+  @media (min-width: $touch) {
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      transition: transform 0.25s ease;
+    }
+  }
+}

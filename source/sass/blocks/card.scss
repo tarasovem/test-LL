@@ -82,14 +82,33 @@
     min-height: 220px;
   }
 
+  @media (min-width: $touch) {
+    &:hover,
+    &:focus {
+      .card__text {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      .card__text {
+        opacity: 0.3;
+      }
+    }
+  }
+
   img {
     display: block;
     width: auto;
     max-width: 100%;
     height: auto;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    border-radius: 12px 0 12px 12px;
+
+    @include hover-scale();
   }
 
-  @include hover-opacity();
 }
 
 .card__date {
