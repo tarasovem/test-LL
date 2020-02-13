@@ -1,0 +1,12 @@
+@mixin hover-opacity {
+  @media (min-width: $touch) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

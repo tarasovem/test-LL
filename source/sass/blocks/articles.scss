@@ -46,6 +46,8 @@
     padding-right: 133px;
     padding-left: 133px;
   }
+
+  @include hover-opacity();
 }
 
 .articles__card {
