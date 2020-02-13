@@ -26,6 +26,7 @@
 
 .articles__button {
   display: block;
+  width: 100%;
   grid-column: auto;
   margin-top: 48px;
   padding-top: 12px;
@@ -42,6 +43,7 @@
   transition: opacity 0.15s ease;
 
   @media (min-width: $tablet) {
+    width: auto;
     display: inline-block;
     margin-top: 36px;
     padding-right: 133px;
