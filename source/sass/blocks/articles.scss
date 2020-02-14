@@ -5,49 +5,53 @@
 
 .articles__body {
   display: grid;
-  grid-row-gap: 16px;
+  grid-row-gap: 14px;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
+    grid-row-gap: 11px;
     grid-auto-rows: minmax(360px, auto);
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
   }
 }
 
 .articles__footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .articles__button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
   display: block;
+  box-sizing: border-box;
   width: 100%;
-  grid-column: auto;
-  margin-top: 48px;
+  margin-top: 62px;
   padding-top: 12px;
   padding-bottom: 12px;
-  color: $white;
-  background-color: $blue-2;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 24px;
   transition: opacity 0.15s ease;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  color: $white;
+  border-radius: 24px;
+  background-color: $blue-2;
+  grid-column: auto;
 
   @media (min-width: $tablet) {
-    width: auto;
     display: inline-block;
-    margin-top: 36px;
-    padding-right: 133px;
-    padding-left: 133px;
+    width: auto;
+    margin-top: 28px;
+    padding-right: 128px;
+    padding-left: 128px;
   }
 
   @include hover-opacity();
@@ -56,5 +60,11 @@
 .articles__card {
   &_large {
     grid-row: 1/3;
+
+    @media (min-width: $tablet) {
+      .card__preview {
+        height: 600px;
+      }
+    }
   }
 }
